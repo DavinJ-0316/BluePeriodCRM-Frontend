@@ -1,0 +1,37 @@
+$breakpoints: (
+	"xs": 320px,
+	"sm": 576px,
+	"md": 768px,
+	"lg": 992px,
+	"xl": 1200px,
+);
+
+@mixin miniMobiles {
+	@media screen and (min-width: map-get($breakpoints, "xs")) {
+		@content;
+	}
+}
+
+@mixin mobiles {
+	@media screen and (min-width: map-get($breakpoints, "sm")) {
+		@content;
+	}
+}
+
+@mixin tablets {
+	@media screen and (min-width: map-get($breakpoints, "md")) {
+		@content;
+	}
+}
+
+@mixin largeTables {
+	@media screen and (min-width: map-get($breakpoints, "lg")) {
+		@content;
+	}
+}
+
+@mixin desktops {
+	@media screen and (min-width: map-get($breakpoints, "xl")) {
+		@content;
+	}
+}

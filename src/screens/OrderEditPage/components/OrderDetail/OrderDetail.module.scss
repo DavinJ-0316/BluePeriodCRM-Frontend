@@ -1,0 +1,12 @@
+.orderDetail {
+    width: 100%;
+    &_invoice {
+        color: #3378ff;
+    }
+    &_invoice_unavailable {
+        color: #ff8f33;
+    }
+    &_tilte {
+        padding: 10px 0;
+    }
+}

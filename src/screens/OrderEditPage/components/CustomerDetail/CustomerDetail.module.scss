@@ -1,0 +1,22 @@
+.customerDetail {
+    width: 100%;
+    &_email {
+        color: #65748b;
+    }
+    &_title {
+        padding: 10px 0;
+    }
+
+    &_customer {
+        margin: 0;
+        color: black;
+        padding: 0;
+        text-transform: none;
+    }
+    &_customer:hover {
+        background-color: transparent;
+    }
+    &_customer:focus {
+        color: grey;
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    text-align: center;
+    position: static;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__footerItem {
+        color: black;
+
+        ul {
+            list-style-type: none;
+            display: inline-flex;
+            li {
+                padding: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
+}

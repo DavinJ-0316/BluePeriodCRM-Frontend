@@ -1,0 +1,33 @@
+@import '../../assets/styles/variable.scss';
+
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.verifyPage {
+    &-container {
+        @include flexCenter;
+        width: 50vh;
+        height: 100vh;
+    }
+
+    &-box {
+        @include flexCenter;
+        background: $background_color;
+        width: 80vh;
+        height: 50vh;
+        border-radius: 8px;
+    }
+
+    &-btn {
+        background-color: $primary_color;
+        margin-bottom: 15px;
+
+        &:hover {
+            background-color: $primary_color_lighter;
+        }
+    }
+}

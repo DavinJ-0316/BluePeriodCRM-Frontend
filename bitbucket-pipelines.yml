@@ -1,0 +1,26 @@
+image: node:16.13.0
+
+pipelines:
+    branches:
+        main:
+            - step:
+                  name: Installing and Building the App
+                  caches:
+                      - node
+                  script:
+                      - npm install
+                      - CI=false npm run build
+                  artifacts:
+                      - build/**
+
+            - step:
+                  name: Deploy to AWS S3
+                  deployment: production
+                  script:
+                      - pipe: atlassian/aws-s3-deploy:1.1.0
+                        variables:
+                            AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                            AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                            AWS_DEFAULT_REGION: $AWS_REGION_PROD
+                            S3_BUCKET: $PROD_BUCKET_NAME
+                            LOCAL_PATH: 'build'

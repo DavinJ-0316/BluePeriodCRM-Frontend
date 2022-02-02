@@ -1,0 +1,26 @@
+.productDetail {
+    width: 100%;
+    border-radius: 7px;
+
+    &_title {
+        padding: 20px 16px;
+        margin: 0;
+    }
+    &_total {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 15px;
+    }
+    &_paddingRigh {
+        padding-right: 20px;
+    }
+    &_tableHead {
+        background-color: #f3f4f6;
+    }
+    &_tableTitle {
+        margin: 0;
+        padding: -13px;
+        color: #65748b;
+    }
+}

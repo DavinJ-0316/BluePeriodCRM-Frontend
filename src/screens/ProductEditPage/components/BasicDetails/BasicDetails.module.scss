@@ -1,0 +1,116 @@
+@import '../../../../assets/styles/variable.scss';
+
+%styled-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+}
+
+.editform {
+    &-details {
+        background-color: white;
+        margin-top: 24px;
+        border-radius: 8px;
+    }
+
+    &-title {
+        display: flex;
+        padding: 32px 24px;
+        align-items: center;
+        font-weight: 600;
+        margin: 0px;
+        font-size: 32px;
+    }
+
+    &-subtitle {
+        margin-top: 24px;
+        padding: 32px 24px;
+    }
+
+    &-input {
+        &_form {
+            padding: 32px 24px;
+            display: flex;
+            gap: 1rem;
+            flex-flow: row wrap;
+        }
+
+        &_field {
+            flex: 0 0 49%;
+        }
+        &_description {
+            padding-top: 8px;
+            flex: 0 0 99.7%;
+        }
+        &_upload {
+            margin-top: 10px;
+            background-color: $primary_color;
+            &:hover {
+                box-shadow: none;
+                background-color: $primary_color_lighter;
+            }
+        }        
+        &_select {
+            flex: 0 0 49%;
+        }
+    }
+
+    &-switch {
+        padding: 0 24px;
+    }
+
+    &-error {
+        font-size: small;
+        color: #df241a;
+        margin: 5px 0;
+    }
+
+    &-btnsection {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 24px;
+
+        &_update {
+            @extend %styled-btn;
+            margin: 8px;
+            font-weight: 600;
+            background-color: $primary_color;
+            color: white;
+            &:hover {
+                background-color: $primary_color_lighter;
+            }
+        }
+
+        &_delete {
+            @extend %styled-btn;
+            box-shadow: none;
+            background-color: white;
+            color: $tertiary_color;
+            &:hover {
+                box-shadow: none;
+                background-color: $tertiary_color_lighter;
+            }
+        }
+
+        &_cancel {
+            @extend %styled-btn;
+            margin: 8px auto 8px 8px;
+            font-weight: 600;
+            box-shadow: none;
+            background-color: white;
+            color: $primary_color;
+            border: 1px solid $primary_color;
+            &:hover {
+                box-shadow: none;
+                background-color: $primary_color_alt;
+            }
+        }
+    }
+}

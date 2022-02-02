@@ -1,0 +1,50 @@
+@import '../../../../assets/styles/variable.scss';
+
+.primary {
+    margin: 0;
+    color: black;
+    padding: 0;
+    text-transform: none;
+}
+.primary:hover {
+    background-color: transparent;
+}
+
+.invoiceAvatar {
+    display: flex;
+    direction: column;
+
+    &_primary {
+        transition: ease, 0.5s;
+        margin-bottom: 1px;
+        color: black;
+        padding: 0 10px;
+        text-transform: none;
+        border-radius: 5px;
+        &:hover {
+            background-color: #cecece;
+        }
+    }
+    &_avatar {
+        margin: 0 10px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #6b7280;
+    }
+    &_secondary {
+        margin-top: 1px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        color: $span_color;
+        p {
+            transition: ease, 0.5s;
+            padding: 0 10px;
+            border-radius: 5px;
+            margin: 0;
+            &:hover {
+                background-color: #cecece;
+            }
+        }
+    }
+}

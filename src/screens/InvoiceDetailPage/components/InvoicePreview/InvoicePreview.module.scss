@@ -1,0 +1,43 @@
+.invoicePreview {
+    max-width: 100%;
+    height: auto;
+    padding: 48px;
+    border-radius: 7px;
+
+    &_content {
+        width: 100%;
+        p,
+        h2,
+        h3 {
+            margin: 0;
+        }
+        &_spaceBetween {
+            display: flex;
+            width: auto;
+            margin: 30px 0;
+            align-self: flex-start;
+            justify-content: space-between;
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &_logo {
+            height: 42px;
+            width: 200px;
+            object-fit: cover;
+            font-size: 14px;
+        }
+        &_paid {
+            font-size: 36px;
+        }
+        &_emphesise {
+            font-weight: 700;
+        }
+        &_weakened {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}

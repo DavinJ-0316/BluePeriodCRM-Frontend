@@ -1,0 +1,9 @@
+.primary {
+    margin: 0;
+    color: black;
+    padding: 0 10px;
+    text-transform: none;
+    &:hover {
+        background-color: #cecece;
+    }
+}

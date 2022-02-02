@@ -1,0 +1,13 @@
+@import '../../assets/styles/variable.scss';
+
+.editproductcontent {
+    &-title {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}

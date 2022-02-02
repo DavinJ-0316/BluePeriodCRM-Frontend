@@ -1,0 +1,112 @@
+@import '../../../../assets/styles/variable.scss';
+
+.addform {
+    &-header {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 24px;
+
+        &-sku {
+            font-size: 14px;
+            &-title {
+                margin: 0 4px;
+                padding: 1px 8px;
+                background-color: $primary_color_alt;
+                align-items: center;
+                border-radius: 16px;
+            }
+        }
+    }
+
+    &-input {
+        &_form {
+            padding: 32px 24px;
+            display: flex;
+            gap: 1rem;
+            flex-flow: row wrap;
+        }
+
+        &_field {
+            flex: 0 0 49%;
+        }
+        &_description {
+            padding-top: 8px;
+            flex: 0 0 99.7%;
+        }
+        &_select {
+            flex: 0 0 49%;
+        }
+    }
+
+    &-error {
+        font-size: small;
+        color: #df241a;
+        margin: 5px 0;
+    }
+
+    &-btnsection {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        justify-content: left;
+        width: 100%;
+
+        &_upload {
+            margin-top: 10px;
+            background-color: $primary_color;
+            &:hover {
+                box-shadow: none;
+                background-color: $primary_color_lighter;
+            }
+
+            &_input {
+                display: none;
+            }
+        }
+
+        &_add {
+            background-color: $primary_color;
+            border: 1px $primary_color_lighter solid;
+            font-size: 0.875rem;
+            padding: 10px 20px;
+            margin: 8px 20px 8px 8px;
+            border-radius: 8px;
+            width: 10%;
+            font-weight: 600;
+
+            &:hover {
+                background-color: $primary_color_lighter;
+            }
+        }
+
+        &_cancel {
+            font-size: 0.875rem;
+            padding: 10px 20px;
+            margin: 8px auto 8px 8px;
+            border-radius: 8px;
+            border: 1px solid $primary_color;
+            font-weight: 600;
+            box-shadow: none;
+            background-color: white;
+            color: $primary_color;
+            border-radius: 8px;
+            border: 1px solid $primary_color;
+
+            &:hover {
+                box-shadow: none;
+                background-color: $primary_color_alt;
+            }
+        }
+
+        &_link {
+            text-decoration: none;
+        }
+    }
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    height: auto;
+}

@@ -1,0 +1,177 @@
+@import '../../../../assets/styles/variable.scss';
+.topproduct {
+    background: $background_color;
+    border-radius: 20px;
+    width: 616px;
+    height: 307px;
+    position: relative;
+}
+
+.topone {
+    width: 470px;
+    height: 54px;
+    background: linear-gradient(90deg, #41A9FA 4.01%, #94D2FF 98.73%);
+    color: $background_color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    position: absolute;
+    top: 36px;
+    left: 19px;
+    padding-left: 11px;
+    &__productname {
+        position: absolute;
+        top: 4px;
+        margin:0px;
+    }
+    &__productcount {
+        position: absolute;
+        top: 27px;
+        margin:0px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+}
+
+.toptwo {
+    width: 433px;
+    height: 54px;
+    background: linear-gradient(90deg, #FF6C75 4.01%, #FF9074 98.73%);
+    color: $background_color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    position: absolute;
+    left: 19px;
+    top: 111px;
+    padding-left: 11px;
+    &__productname {
+        position: absolute;
+        top: 4px;
+        margin:0px;
+    }
+    &__productcount {
+        position: absolute;
+        top: 27px;
+        margin:0px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+}
+
+.topthree {
+    width: 284px;
+    height: 54px;
+    background: linear-gradient(90deg, #FF8C56 4.01%, #FFB215 98.73%);
+    color: $background_color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    position: absolute;
+    left: 19px;
+    top: 187px;
+    padding-left:11px;
+    &__productname {
+        position: absolute;
+        top: 4px;
+        margin:0px;
+    }
+    &__productcount {
+        position: absolute;
+        top: 27px;
+        margin:0px;
+        font-weight: normal;
+        font-size: 10px;
+    }
+}
+
+.statusbar{
+    width: 524px;
+    height: 19px;
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+}
+
+.available {
+    height: 4px;
+    flex: 3;
+    &__bar {
+        height: 4px;
+        width: 28px;
+        background: $primary_color_lighter;
+        border-radius: 2px;
+        position: absolute;
+        left: 17%;
+        transform: translate(-17%, 0);
+        &::after{
+            content: "In Stock";
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+            position: absolute;
+            left: 36px;
+            top: -5px;
+        }
+    } 
+}
+
+.limited {
+    height: 4px;
+    flex: 3;
+    &__bar {
+        height: 4px;
+        width: 28px;
+        background: #FF914D;
+        border-radius: 2px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        &::after{
+            content: "Limited";
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+            position: absolute;
+            left: 36px;
+            top: -5px;
+        }
+    } 
+}
+
+.outofstock {
+    height: 4px;
+    flex: 3;
+    &__bar {
+        height: 4px;
+        width: 28px;
+        background: #FF7174;
+        border-radius: 2px;
+        position: absolute;
+        left: 83%;
+        transform: translate(-83%, 0);
+        &::after{
+            content: "Out of Stock";
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+            position: absolute;
+            left: 36px;
+            top: -5px;
+        }
+    } 
+}
+
+

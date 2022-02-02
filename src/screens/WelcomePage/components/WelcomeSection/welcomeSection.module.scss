@@ -1,0 +1,26 @@
+@import '../../../../assets/styles/variable.scss';
+
+.welcomeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .welcomeMessage {
+        text-align: center;
+        font-size: 60px;
+    }
+    .router {
+        text-decoration: none;
+        width: 200px;
+        height: auto;
+    }
+    .button {
+        background-color: $primary_color;
+        width: 100%;
+        font-size: 26px;
+        border-radius: 100px;
+        &:hover {
+            background-color: $primary_color_lighter;
+        }
+    }
+}

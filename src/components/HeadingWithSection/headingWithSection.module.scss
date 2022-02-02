@@ -1,0 +1,22 @@
+.headingWithSection {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    .heading {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 10%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

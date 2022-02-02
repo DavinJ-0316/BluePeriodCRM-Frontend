@@ -1,0 +1,131 @@
+@import '../../assets/styles/variable.scss';
+
+.customerdetail {
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        align-items: center;
+
+        &-custname {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        &-custemailtitle {
+            font-size: 14px;
+        }
+        &-custemail {
+            margin: 0 4px;
+            padding: 1px 8px;
+            background-color: $primary_color_alt;
+            align-items: center;
+            border-radius: 16px;
+        }
+        &-btn {
+            background-color: $primary_color;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin: 0 4px 0 0;
+                text-align: center;
+            }
+            svg {
+                font-size: 20px;
+            }
+
+            &:hover {
+                background-color: $primary_color_lighter;
+            }
+        }
+    }
+    &-details {
+        background-color: white;
+        margin-top: 24px;
+        border-radius: 8px;
+
+        &-title {
+            display: flex;
+            padding: 32px 24px;
+            align-items: center;
+            font-weight: 600;
+            margin: 0px;
+            font-size: 1rem;
+        }
+        &-itemtext {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            span {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.57;
+            }
+            p {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 400;
+                color: $span_color;
+            }
+        }
+
+        &-reset {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 16px 24px;
+            font-weight: 600;
+            font-size: 14px;
+
+            &-btn {
+                background-color: white;
+                color: $primary_color;
+                border-radius: 8px;
+                border: 1px solid $primary_color;
+                box-shadow: none;
+
+                &:hover {
+                    background-color: $background_color;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        &-delete {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 16px 24px;
+            font-weight: 600;
+            font-size: 14px;
+
+            &-btn {
+                font-size: 14px;
+                padding: 8px 20px;
+                margin: 16px 0;
+                background-color: white;
+                color: $tertiary_color;
+                box-shadow: none;
+                border-radius: 8px;
+                border: 1px solid $tertiary_color;
+                &:hover {
+                    box-shadow: none;
+                    background-color: $tertiary_color_lighter;
+                }
+            }
+
+            span {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 400;
+                color: $span_color;
+            }
+        }
+    }
+}
+h2,
+h3 {
+    margin: 0;
+}

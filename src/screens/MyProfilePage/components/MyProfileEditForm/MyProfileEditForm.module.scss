@@ -1,0 +1,74 @@
+@import '../../../../assets/styles/variable.scss';
+
+%styled-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+.editform {
+    margin-top: 24px;
+
+    &-subtitle {
+        display: flex;
+        padding: 32px 24px;
+        align-items: center;
+        font-weight: 600;
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    &-input {
+        &_form {
+            padding: 32px 24px;
+            display: flex;
+            gap: 1rem;
+            flex-flow: row wrap;
+        }
+
+        &_field {
+            flex: 0 0 49%;
+        }
+    }
+    &-error {
+        font-size: small;
+        color: #df241a;
+        margin: 5px 0;
+    }
+    &-btnsection {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 16px 24px;
+        font-weight: 600;
+        font-size: 0.875rem;
+
+        &_update {
+            background-color: white;
+            color: $primary_color;
+            border-radius: 8px;
+            border: 1px solid $primary_color;
+            box-shadow: none;
+
+            &:hover {
+                background-color: $background_color;
+                box-shadow: none;
+            }
+        }
+
+        &_delete {
+            @extend %styled-btn;
+            box-shadow: none;
+            background-color: white;
+            color: $tertiary_color;
+            &:hover {
+                box-shadow: none;
+                background-color: $tertiary_color_lighter;
+            }
+        }
+    }
+}
+form {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+}

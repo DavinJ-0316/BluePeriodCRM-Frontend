@@ -1,0 +1,162 @@
+@import '../../assets/styles/variable.scss';
+
+.userdetail {
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        padding: 24px 24px;
+
+        &-username {
+            font-size: 32px;
+        }
+        &-avatar {
+            height: 60px;
+            width: 60px;
+            background-color: $primary_color_lighter;
+        }
+    }
+    &-details {
+        background-color: white;
+        margin-top: 24px;
+        border-radius: 8px;
+
+        &-title {
+            display: flex;
+            padding: 32px 24px;
+            align-items: center;
+            font-weight: 600;
+            margin: 0px;
+            font-size: 16px;
+            line-height: 1.375;
+        }
+        &-subtitle {
+            padding: 0px 24px;
+            align-items: center;
+            margin: 0px;
+            font-size: 14px;
+        }
+        &-plansection {
+            display: flex;
+            padding: 0px 24px 0px 0px;
+        }
+        &-plan {
+            flex-grow: 1;
+            width: 33%;
+            margin: 24px 0px 24px 24px;
+            padding: 24px 8px;
+            background-color: white;
+            color: $primary_color;
+            border-color: white;
+            border-width: 2px;
+            border-radius: 10px;
+            border-style: solid;
+
+            &:hover {
+                background-color: white;
+            }
+            &:focus {
+                border-style: solid;
+                border-width: 2px;
+                border-color: $primary_color_lighter;
+            }
+            &-lines {
+                width: 100%;
+            }
+            &-line2 {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            &-right {
+                color: $secondary_color;
+                font-size: 12px;
+            }
+        }
+        &-section {
+            padding-top: 0px;
+            border-style: solid;
+            border-width: 0.5px;
+            border-radius: 5px;
+            margin: 0px 24px;
+            border-color: lightgray;
+        }
+        &-itemtext {
+            span {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.57;
+            }
+            p {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: $span_color;
+            }
+
+            &-left {
+                flex: 3.3;
+            }
+            &-right {
+                flex: 6.6;
+            }
+        }
+        &-addressbox {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 24px 0px 0px;
+            align-items: center;
+        }
+        &-editbtn {
+            border-radius: 8px;
+            background-color: white;
+            color: $primary_color;
+            margin: 0px;
+            border: none;
+            font-weight: 600;
+            &:hover {
+                background-color: $background_color;
+            }
+        }
+    }
+    &-upgrade {
+        &-box {
+            padding: 24px 0px;
+        }
+        &-subtitle {
+            padding: 0px 24px;
+            align-items: center;
+            margin: 0px;
+            font-size: 14px;
+            &-btn {
+                color: $primary_color_lighter;
+            }
+        }
+        &-btnsection {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0px 24px 24px 24px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        &-btn {
+            margin-left: auto;
+            background-color: white;
+            color: $primary_color;
+            border-radius: 8px;
+            border: 1px solid $primary_color;
+            box-shadow: none;
+
+            &:hover {
+                background-color: $background_color;
+                box-shadow: none;
+            }
+        }
+    }
+}
+h2,
+h3 {
+    margin: 0;
+}

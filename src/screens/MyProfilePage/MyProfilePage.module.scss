@@ -1,0 +1,133 @@
+@import '../../assets/styles/variable.scss';
+
+.userdetail {
+    &-heading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        padding: 24px 24px;
+
+        &-username {
+            font-size: 32px;
+        }
+        &-avatar {
+            height: 60px;
+            width: 60px;
+            background-color: $primary_color_lighter;
+        }
+    }
+    &-details {
+        background-color: white;
+        margin-top: 24px;
+        border-radius: 8px;
+
+        &-title {
+            display: flex;
+            padding: 32px 24px;
+            align-items: center;
+            font-weight: 600;
+            margin: 0px;
+            font-size: 16px;
+        }
+        &-section {
+            padding-bottom: 24px;
+            padding-top: 0px;
+        }
+        &-itemtext {
+            span {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.57;
+            }
+            p {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: $span_color;
+            }
+        }
+        &-passwordtext {
+            display: flex;
+            p {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+            span {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.57;
+            }
+
+            &-name {
+                width: 20%;
+            }
+            &-input {
+                width: 40%;
+            }
+            &-error {
+                font-size: small;
+                color: #df241a;
+                margin: 5px 0;
+            }
+        }
+
+        &-update {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 16px 24px;
+            font-weight: 600;
+            font-size: 0.875rem;
+
+            &-btn {
+                background-color: white;
+                color: $primary_color;
+                border-radius: 8px;
+                border: 1px solid $primary_color;
+                box-shadow: none;
+
+                &:hover {
+                    background-color: $background_color;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        &-delete {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 16px 24px;
+            font-weight: 600;
+            font-size: 0.875rem;
+
+            &-btn {
+                font-size: 0.875rem;
+                padding: 8px 20px;
+                background-color: white;
+                color: $tertiary_color;
+                box-shadow: none;
+                border-radius: 8px;
+                border: 1px solid $tertiary_color;
+                &:hover {
+                    box-shadow: none;
+                    background-color: $tertiary_color_lighter;
+                }
+            }
+
+            span {
+                margin: 0px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: $span_color;
+            }
+        }
+    }
+}
+h2,
+h3 {
+    margin: 0;
+}

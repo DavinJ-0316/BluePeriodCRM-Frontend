@@ -1,0 +1,95 @@
+@import '../../assets/styles/variable.scss';
+
+.invoiceDetail {
+    width: 100%;
+    &_heading {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        padding: 0;
+        transition: ease 0.5s;
+
+        &_title {
+            display: flex;
+            direction: column;
+            align-items: center;
+            height: auto;
+            &_avatar {
+                margin-right: 10px;
+                background-color: #6b7280;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            &_primary {
+                transition: ease, 0.5s;
+                margin: 0 0 1px 0;
+                color: black;
+                font-size: 32px;
+                padding: 0 10px;
+                text-transform: none;
+                border-radius: 5px;
+            }
+
+            &_secondary {
+                margin-top: 1px;
+                width: auto;
+                display: flex;
+                flex-direction: row;
+                color: $span_color;
+                p {
+                    transition: ease, 0.5s;
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    margin: 0;
+                    &:hover {
+                        background-color: #cecece;
+                    }
+                }
+            }
+        }
+        &_buttons {
+            display: flex;
+            &_btnLeft {
+                background-color: $primary_color;
+                border-radius: 8px;
+                display: flex;
+                height: 37px;
+                align-items: center;
+                justify-content: center;
+                p {
+                    margin: 0 4px 0 0;
+                    text-align: center;
+                }
+                svg {
+                    font-size: 20px;
+                }
+                &:hover {
+                    background-color: $primary_color_lighter;
+                }
+            }
+            &_btnRight {
+                background-color: $primary_color;
+                margin-left: 15px;
+                border-radius: 8px;
+                display: flex;
+                height: 37px;
+                align-items: center;
+                justify-content: center;
+                p {
+                    margin: 0 4px 0 0;
+                    text-align: center;
+                }
+                svg {
+                    font-size: 20px;
+                }
+                &:hover {
+                    background-color: $primary_color_lighter;
+                }
+            }
+        }
+    }
+    &_divider {
+        margin: 20px 0;
+    }
+}

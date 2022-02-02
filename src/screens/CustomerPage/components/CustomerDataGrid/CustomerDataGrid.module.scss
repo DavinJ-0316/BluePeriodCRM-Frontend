@@ -1,0 +1,21 @@
+@import '../../../../assets/styles/variable.scss';
+
+.p_tag {
+    margin: 0;
+    color: black;
+    padding: 0;
+    text-transform: none;
+}
+.p_tag:hover {
+    background-color: transparent;
+}
+
+.tag_secondary {
+    margin: 0;
+    color: $span_color;
+}
+
+.dollar_color {
+    margin: 0;
+    color: $dollar_color;
+}

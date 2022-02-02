@@ -1,0 +1,22 @@
+@import '../../../../assets/styles/variable.scss';
+
+.orderpage {
+    &-btnsection {
+        display: flex;
+        padding: 2px;
+        justify-content: right;
+    }
+    &-addbtn {
+        width: 20%;
+        margin: 0px;
+        border: 0px;
+        padding: 8px 50px;
+        font-weight: 600;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    &-addicon {
+        font-size: large;
+        padding-right: 5px;
+    }
+}

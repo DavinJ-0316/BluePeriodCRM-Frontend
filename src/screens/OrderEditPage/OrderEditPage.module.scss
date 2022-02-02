@@ -1,0 +1,59 @@
+@import '../../assets/styles/variable.scss';
+
+.OrderEditPage {
+    width: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    justify-content: space-between;
+
+    &_backButton {
+        margin-bottom: 10px;
+    }
+    &_title {
+        padding: 0px 0px 25px 0px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    &_typo {
+        padding: 0;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    &_buttons {
+        padding: 0;
+        &_left {
+            border-radius: 8px;
+            background-color: $primary_color;
+            &:hover {
+                background-color: $primary_color_lighter;
+            }
+        }
+        &_right {
+            border-radius: 8px;
+            background-color: $primary_color;
+            margin-left: 20px;
+            &:hover {
+                background-color: $primary_color_lighter;
+            }
+        }
+    }
+    &_loading {
+        position: absolute;
+        top: 80px;
+    }
+}
+.OrderEditPageBody {
+    width: 100%;
+    display: flex;
+
+    &_left {
+        flex: 3.2;
+    }
+    &_right {
+        flex: 6.8;
+    }
+}

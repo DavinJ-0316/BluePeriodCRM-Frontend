@@ -1,0 +1,51 @@
+@import '../../assets/styles/variable.scss';
+@import '../../assets/styles/breakpoints';
+
+.header {
+    &-box {
+        flex-grow: 1;
+        margin-left: 260px;
+    }
+    &-box2 {
+        flex-grow: 1;
+    }
+    &-appbar {
+        background-color: white;
+        position: fixed;
+        padding-left: 260px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+    &-color {
+        color: $primary_color;
+    }
+    &-avatar {
+        background-color: $primary_color_lighter;
+        height: 36px;
+        width: 36px;
+    }
+    &-logout {
+        border-top: lightgray 1px solid;
+    }
+    &-p {
+        margin: 0px 10px;
+    }
+    &-iconsize {
+        padding: 1px;
+    }
+    &-typography {
+        margin-left: 10px;
+        font-weight: 400;
+    }
+    &-toolbar {
+        padding-right: 0px;
+    }
+    &-btn {
+        padding: 8px;
+        margin: 0 10px;
+        color: $primary_color;
+        border-radius: 20px;
+    }
+    &-menu {
+        margin-top: 59px;
+    }
+}

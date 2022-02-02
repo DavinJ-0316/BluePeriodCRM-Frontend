@@ -1,0 +1,34 @@
+@import '../../assets/styles/variable.scss';
+
+.productPage {
+    &-box {
+        display: flex;
+        margin: 0px 0px 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-header {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    &-addbtn {
+        background-color: $primary_color;
+        margin: 0px;
+        border: none;
+        font-weight: 600;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: $primary_color_lighter;
+        }
+    }
+    &-addicon {
+        font-size: large;
+        padding-right: 5px;
+    }
+    &-box_white {
+        background-color: white;
+        border-radius: 15px 15px 0px 0px;
+    }
+}

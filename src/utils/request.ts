@@ -2,18 +2,18 @@ import axios, { AxiosRequestConfig } from 'axios';
 
 let baseURL: string;
 if (process.env.NODE_ENV === 'production') {
-    baseURL = 'https://alb.blueperiod.link/api/';
+    baseURL = '';
 } else if (process.env.NODE_ENV === 'development') {
-    baseURL = 'http://localhost:3000/api/';
+    baseURL = '';
 } else {
-    baseURL = 'https://alb.devilscrm.link/api/';
+    baseURL = '';
 }
 
 let lambdaURl: string;
 if (process.env.NODE_ENV === 'production') {
-    lambdaURl = 'https://j4ycvsy4mj.execute-api.ap-southeast-2.amazonaws.com/production/';
+    lambdaURl = '';
 } else {
-    lambdaURl = 'https://qfc4gfhiy7.execute-api.us-east-2.amazonaws.com/UAT/';
+    lambdaURl = '';
 }
 
 const withCredentials = true;
